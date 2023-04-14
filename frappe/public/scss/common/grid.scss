@@ -2,6 +2,7 @@
 	border: 1px solid var(--table-border-color);
 	border-radius: var(--border-radius);
 	color: var(--text-color);
+	overflow-x: scroll;
 }
 
 .form-grid.error {
@@ -124,9 +125,15 @@
 	.col {
 		padding-left: var(--padding-sm);
 		padding-right: var(--padding-sm);
-		border-right: 1px solid var(--table-border-color);
+		//border-right: 1px solid var(--table-border-color);
+		border: 1px solid var(--table-border-color);
 		// overflow: hidden;
 	}
+}
+
+.data-row.row{
+	display: flex;
+	flex-wrap: nowrap;
 }
 
 .grid-body {
@@ -135,7 +142,8 @@
 	border-bottom-right-radius: var(--border-radius);
 
 	.col:last-child {
-		border: none;
+		//border: none;
+		border: 1px solid var(--table-border-color);
 	}
 
 	.btn-open-row {
